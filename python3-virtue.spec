@@ -7,7 +7,7 @@ Summary:	Modern, extensible, unittest compliant test runner
 Summary(pl.UTF-8):	Nowoczesne, rozszerzalne, zgodne z unittest narzędzie do uruchamiania testów
 Name:		python3-virtue
 Version:	2025.7.1
-Release:	1.1
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/virtue/
