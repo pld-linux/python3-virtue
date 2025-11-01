@@ -7,7 +7,7 @@ Summary:	Modern, extensible, unittest compliant test runner
 Summary(pl.UTF-8):	Nowoczesne, rozszerzalne, zgodne z unittest narzędzie do uruchamiania testów
 Name:		python3-virtue
 Version:	2025.7.1
-Release:	1
+Release:	1.1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/virtue/
@@ -84,6 +84,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__mv} $RPM_BUILD_ROOT%{_bindir}/virtue{,-3}
 ln -s virtue-3 $RPM_BUILD_ROOT%{_bindir}/virtue
+
+%{__rm} -r $RPM_BUILD_ROOT%{py3_sitescriptdir}/virtue/tests
 
 %clean
 rm -rf $RPM_BUILD_ROOT
