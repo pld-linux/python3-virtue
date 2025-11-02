@@ -72,7 +72,9 @@ PYTHONPATH=$(pwd) \
 %endif
 
 %if %{with doc}
-PYTHONPATH=$(pwd) \
+%{__python3} -m zipfile -e build-3/*.whl build-3-test
+
+PYTHONPATH=$(pwd)/build-3-test \
 %{__make} -C docs html \
 	SPHINXBUILD=sphinx-build-3
 %endif
